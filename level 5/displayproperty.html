@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Display Property</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(167, 60, 14);
+        margin: 10px;
+        display: inline-block;
+          
+      }
+      #box1{
+        /* it dont take space and it is not visible */
+        /* if used visibility:hidden; then it will take space but it is not visible */ 
+        display: none;
+      }
+        
+        
+    </style>
+  </head>
+  <body>
+    <div id="box1" class="box">
+      Box 1
+    </div>
+    <div id="box2" class="box">
+      Box 2
+    </div>
+  </body>
+</html>

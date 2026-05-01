@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>relative units</title>
+        <style>
+            *{
+                font-size: 50px;
+            }
+            #first{
+                height:200px;
+                width:200px;
+                background-color: lightblue;
+                font-size: 25px;  
+            }
+            #second{
+                /* relative to the parent element */
+                height: 50%;
+                width:30%;
+                background-color: lightcoral;
+                font-size:2em; /* 2 times the font size of the parent element */
+                font-size: 2rem; /* 2 times the font size of the root element */
+           } 
+            #third{
+                height: 50vh; /* 50% of the viewport height */
+                width: 50vw; /* 50% of the viewport width */
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    <body>
+        Body text
+        <div id="first">
+            first
+            <div id="second">
+                second
+            </div>
+        </div>
+        <div id="third">
+            third
+    </body>
+</html>
